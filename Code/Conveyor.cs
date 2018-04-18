@@ -25,14 +25,14 @@ public class Conveyor : MonoBehaviour {
     }
 	
 	void OnDrawGizmos() {
-		//Set gizmos color to green
+	//Set gizmos color to green
         Gizmos.color = Color.green;
-		// set out ray direction to forward of conveyor
+	// set out ray direction to forward of conveyor
         Vector3 direction = transform.TransformDirection(Vector3.forward) * 5;
 		
-		//draw ray gizmo to conveyor push direction
+	//draw ray gizmo to conveyor push direction
         Gizmos.DrawRay(transform.position, direction);
-		//draw a label showing conveyor speed
-		Handles.Label(transform.position, speed);
+	//draw a label showing conveyor speed
+	Handles.Label(transform.position, speed);
     }
 }
